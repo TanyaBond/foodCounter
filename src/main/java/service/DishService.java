@@ -1,15 +1,18 @@
 package service;
 
+import com.google.inject.Module;
 import domain.Dish;
 
-public interface DishService {
-    //ToDo: transaction here
+public interface DishService extends Module {
 
-    void create();
+    Integer calculateCalories(Dish dish);
 
-    boolean update();
+    Double calculateFat(Dish dish);
 
-    boolean delete();
+    Double calculateCarbs(Dish dish);
 
-    Dish read();
+    Double calculateProteins(Dish dish);
+
+
+
 }

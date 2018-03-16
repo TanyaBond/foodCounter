@@ -5,20 +5,20 @@ import java.util.Map;
 
 public class Dish {
     private Integer id;
-    private Integer name;
+    private String name;
     //product, count in gram
-    private Map<Product, Integer> productList;
+    private Map<Product, Double> productList;
 
 
     public Integer getId() {
         return id;
     }
 
-    public Integer getName() {
+    public String getName() {
         return name;
     }
 
-    public Map<Product, Integer> getProductList() {
+    public Map<Product, Double> getProductList() {
         return productList;
     }
 
@@ -37,12 +37,12 @@ public class Dish {
             return this;
         }
 
-        public Builder setName(Integer name) {
+        public Builder setName(String name) {
             Dish.this.name = name;
             return this;
         }
 
-        public Builder setProductList(Map<Product, Integer> productList) {
+        public Builder setProductList(Map<Product, Double> productList) {
             Dish.this.productList = productList;
             return this;
         }

@@ -6,7 +6,11 @@ public class Product {
     private Double carbs;
     private Double fat;
     private Double proteins;
+    private Integer calories;
 
+    public Integer getCalories() {
+        return calories;
+    }
 
     public String getName() {
         return name;
@@ -65,6 +69,11 @@ public class Product {
 
         public Builder setProteins(Double proteins) {
             Product.this.proteins = proteins;
+            return this;
+        }
+
+        public Builder setCalories(Integer calories) {
+            Product.this.calories = calories;
             return this;
         }
 
